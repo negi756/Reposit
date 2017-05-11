@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+	<listener-class>
+             listener.Hib_con
+        </listener-class>
+   </listener>
+    <listener>
+	<listener-class>
+             listener.SessionControl
+        </listener-class>
+   </listener>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>loginchk</servlet-name>
+        <servlet-class>Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginchk</servlet-name>
+        <url-pattern>/loginchk</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>loginchk1</servlet-name>
+        <servlet-class>login1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginchk1</servlet-name>
+        <url-pattern>/pages/loginchk1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/pages/delete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>delete1</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete1</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>deleteuser</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteuser</servlet-name>
+        <url-pattern>/pages/deleteuser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+</web-app>

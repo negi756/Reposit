@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="hib_beans.Admin" table="admin" schema="eventx">
+		<id name="aid">
+                    <generator class="identity"/>
+                </id>
+                <property name="aname"/>
+                <property name="adob"/>
+                <property name="aemail"/>
+                <property name="apass"/>
+                
+                
+        </class>
+
+</hibernate-mapping>

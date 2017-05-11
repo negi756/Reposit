@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="hib_beans.User" table="user" schema="eventx">
+		<id name="uid">
+                    <generator class="identity"/>
+                </id>
+                <property name="ufname"/>
+                <property name="ulname"/>
+                <property name="udob"/>
+                <property name="uphone"/>
+                <property name="uemail"/>
+                <property name="upass"/>
+                <property name="upic"/>
+                <property name="uactive"/>
+                
+        </class>
+
+</hibernate-mapping>

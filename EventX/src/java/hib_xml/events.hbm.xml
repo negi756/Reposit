@@ -1,0 +1,25 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="hib_beans.Events" table="events" schema="eventx">
+		<id name="eid">
+                    <generator class="identity"/>
+                </id>
+                <property name="ename"/>
+                <property name="etype"/>
+                <property name="esdate"/>
+                <property name="eedate"/>
+                <property name="estime"/>
+                <property name="eetime"/>
+                <property name="evenue"/>
+                <property name="edescription" column="edescription" type="java.lang.String" length="2000"/>
+                <property name="epic"/>
+                <property name="uid"/>
+                <property name="pdate"/>
+                
+                
+        </class>
+
+</hibernate-mapping>
