@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--database connection-->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/tester</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">password</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hbm2ddl.auto">update</property>
+    <mapping class="" file="" jar="" package="" resource="resources/student.hbm.xml"/>
+    <mapping resource="resources/details.hbm.xml"/>
+    <mapping resource="resources/qanda.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+        <class name="pojodriver.QandA" table="quesans" schema="tester">
+            <id name="question"/>
+            <property name="qno"></property>
+            <property name="tsub"></property>
+            <property name="option1"></property>
+            <property name="option2"></property>
+            <property name="option3"></property>
+            <property name="option4"></property>
+            <property name="answer"></property>
+        </class>
+    </hibernate-mapping>
